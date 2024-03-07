@@ -152,7 +152,7 @@ console.log(upperFirst("io sono kassandra"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const cutString = function (string) {
-  const firstCh = string.slice(0, -1).slice(1,-1);
+  const firstCh = string.slice(0, -1).slice(1, -1);
   return firstCh;
 };
 
@@ -162,3 +162,15 @@ console.log(cutString("ciao sono una frase"));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const giveMeRandom = function (n) {
+  
+  const arreyRandom = [];
+
+  for (let i = 0; i < n; i++) {
+    const numberRandom = Math.floor(Math.random() * 11);
+    arreyRandom.push(numberRandom); 
+  }
+  return arreyRandom;
+};
+
+console.log(giveMeRandom(3));
